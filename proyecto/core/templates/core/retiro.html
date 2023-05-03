@@ -1,0 +1,21 @@
+
+  {%extends 'core/base.html'%}
+  {%load static%}
+  {%block contenido%}
+<div class="container">
+<div class="row">
+  <div class="col-1"></div>
+    <div class="col-8">
+<form action="inicio.html" method="post">
+        <label for="correo" class="form-label">Ingrese el codigo de retiro</label>
+        <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com" required>
+<br><button type="reset" class="btn btn-danger">Limpiar</button>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+{%endblock contenido%}
